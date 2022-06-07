@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form_data" method="POST">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>
+
+
+<table class="table">
+    <thead>
+      <tr>
+       <th>id</th>
+       <th>name</th>
+       <th>buying_price</th>
+       <th>selling_price</th>
+       <th>stock_quantity</th>
+      </tr>
+    </thead>
+       </tbody>
+       {%for product in products%}
+       <tr>
+         <td>{{product[0]}}</td>
+         <td>{{product[1]}}</td>
+         <td>{{product[2]}}</td>
+         <td>{{product[3]}}</td>
+         <td>{{product[4]}}</td>
+ 
+       </tr>
+       {% endfor %}
+     </table>
