@@ -93,6 +93,7 @@ def sale(id):
     x=id
     cur.execute("""SELECT * FROM sales WHERE pid=%(id)s""",{"id":x})   
     sales=cur.fetchall()
+    print(sales)
     return render_template("sales.html",sales=sales)         
             
        
