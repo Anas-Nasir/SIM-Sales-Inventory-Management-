@@ -76,6 +76,11 @@ def form_data():
         conn.commit()
         return redirect("/products") 
 
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+    
 @app.route("/sales",methods=['POST','GET'])
 def sales():
     if request.method=='POST':
