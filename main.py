@@ -4,7 +4,7 @@ import psycopg2
 app = Flask(__name__)
 
 #conn=psycopg2.connect(user="postgres",password="Penina505",
-#host="127.0.0.1",port="5432",database="myduka")
+#076'/'''yhost="127.0.0.1",port="5432",database="myduka")
 conn=psycopg2.connect(user="hoirgrtzymuymf",password="5ca6587cf31b6765601f5d8f102d667472f60af26fe2e792b73839a553273aa1",
 host="127.0.0.1",port="5432",database="myduka")
 cur = conn.cursor()
